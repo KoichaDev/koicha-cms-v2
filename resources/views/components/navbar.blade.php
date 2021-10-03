@@ -6,7 +6,14 @@
              height="30"
              class="navbar__image">
         <p>Laravel Todo App</p>
-        <a href="#" class="navbar__login no-underline">Login</a>
-        <a href="{{ route('register') }}" class="no-underline">Signup</a>
+        @auth
+            <p>{{ auth()->user()->first_name }} {{ auth()->user()->last_name }}</p>
+            <a href="#" class="no-underline">Logout</a>
+        @endauth
+
+        @guest
+            <a href="#" class="navbar__login no-underline">Login</a>
+            <a href="{{ route('register') }}" class="no-underline">Signup</a>
+        @endguest
     </nav>
 </div>
