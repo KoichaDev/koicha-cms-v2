@@ -8,7 +8,7 @@
         <p>Laravel Todo App</p>
         @auth
             <p>{{ auth()->user()->first_name }} {{ auth()->user()->last_name }}</p>
-            <a href="#" class="no-underline">Logout</a>
+            <a href="{{ route('logout') }}" class="no-underline">Logout</a>
         @endauth
 
         @guest
