@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+
+.navbar-container {
+    border-bottom: 1px solid black;
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 1em;
+        max-width: 50%;
+        margin: auto;
+        padding: 1.5em 1.5em;
+
+        .navbar__image {
+            display: block;
+        }
+
+        .navbar__login {
+            margin-left: auto;
+        }
+    }
+}

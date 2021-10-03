@@ -7,6 +7,6 @@
              class="navbar__image">
         <p>Laravel Todo App</p>
         <a href="#" class="navbar__login no-underline">Login</a>
-        <a href="#" class="no-underline">Signup</a>
+        <a href="{{ route('register') }}" class="no-underline">Signup</a>
     </nav>
 </div>
