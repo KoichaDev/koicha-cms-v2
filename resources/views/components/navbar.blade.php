@@ -12,7 +12,7 @@
         @endauth
 
         @guest
-            <a href="#" class="navbar__login no-underline">Login</a>
+            <a href="{{ route('login') }}" class="navbar__login no-underline">Login</a>
             <a href="{{ route('register') }}" class="no-underline">Signup</a>
         @endguest
     </nav>
